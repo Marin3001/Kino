@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="704" Width="1545">
+    <Grid>
+        <TextBox x:Name="textbox3" HorizontalAlignment="Left" Margin="168,469,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Height="50" />
+        <Button x:Name="button1" Content="Izračunaj" HorizontalAlignment="Left" Margin="198,595,0,0" VerticalAlignment="Top" Height="46" Width="128" Click="izracunajcijenu"/>
+        <Button x:Name="button2" Content="Karta" HorizontalAlignment="Left" Margin="840,45,0,0" VerticalAlignment="Top" Height="55" Width="100" Click="ispisikartu"/>
+        <ListBox x:Name="Odabirfilma" Margin="162,125,1033,496">
+            <ListBoxItem Name="listboxitem1" MouseDoubleClick="film1">Doctor Strange 2</ListBoxItem>
+            <ListBoxItem Name="listboxitem2" MouseDoubleClick="film2">The Batman</ListBoxItem>
+            <ListBoxItem Name="listboxitem" MouseDoubleClick="film3">The Lost City</ListBoxItem>
+        </ListBox>
+        <ListBox x:Name="VrstaProjekcije"  Margin="162,232,1033,387" >
+            <ListBoxItem Name="listboxitem4" MouseDoubleClick="vrijednost2D" >2D</ListBoxItem>
+            <ListBoxItem Name="listboxitem5" MouseDoubleClick="vrijednost3D">3D</ListBoxItem>
+            <ListBoxItem Name="listboxitem6" MouseDoubleClick="vrijednost4D">4D</ListBoxItem>
+        </ListBox>
+        <ListBox x:Name="Red" Margin="168,342,1027,277" >
+            <ListBoxItem Name="listboxitem7" MouseDoubleClick="red1">Red 1</ListBoxItem>
+            <ListBoxItem Name="listboxitem8" MouseDoubleClick="red2">Red 2</ListBoxItem>
+            <ListBoxItem Name="listboxitem9" MouseDoubleClick="red3">Red 3</ListBoxItem>
+        </ListBox>
+        <TextBox x:Name="textbox1" IsReadOnly="True" HorizontalAlignment="Left" Margin="469,600,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ime: " HorizontalAlignment="Left" Margin="88,476,0,0" VerticalAlignment="Top" Height="25" Width="44"/>
+        <Label Content="Cijena: " HorizontalAlignment="Left" Margin="386,600,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.503,-0.375"/>
+        <ListBox x:Name="Status"  Margin="505,465,742,141">
+            <ListBoxItem Name="listboxitem10" MouseDoubleClick="VrijednostGlobvarStudent">Student</ListBoxItem>
+            <ListBoxItem Name="listboxitem11" MouseDoubleClick="VrijednostGlobvarOdrasla">Odrasla Osoba</ListBoxItem>
+            <ListBoxItem Name="listboxitem12" MouseDoubleClick="VrijednostGlobvarDijete">Dijete</ListBoxItem>
+        </ListBox>
+        <Label Content="Status: " HorizontalAlignment="Left" Margin="410,476,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="Kino" Margin="160,45,1027,568">
+            <ListBoxItem Name="listboxitem13" MouseDoubleClick="kino1">Kino 1</ListBoxItem>
+            <ListBoxItem Name="listboxitem14" MouseDoubleClick="kino2">Kino 2</ListBoxItem>
+            <ListBoxItem Name="listboxitem15" MouseDoubleClick="kino3">Kino 3</ListBoxItem>
+        </ListBox>
+        <Label Content="Kino: " HorizontalAlignment="Left" Margin="88,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="Film: " HorizontalAlignment="Left" Margin="88,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.327,0.485"/>
+        <Label Content="Projekcija: " HorizontalAlignment="Left" Margin="94,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.056,0.537"/>
+        <Label Content="Red: " HorizontalAlignment="Left" Margin="99,351,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.019,0.746"/>
+        <TextBox x:Name="textbox2" IsReadOnly="True" HorizontalAlignment="Left" Margin="840,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" Height="200"/>
+        <Button x:Name="button3" Content="Spremi Ime" HorizontalAlignment="Left" Margin="200,524,0,0" VerticalAlignment="Top" Height="46" Width="126" Click="spremiime"/>
+    </Grid>
+</Window>
